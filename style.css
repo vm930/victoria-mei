@@ -12,3 +12,61 @@ Dark green: #28b485
 	--shadowMain: 5px 5px 10px 5px rgba(0, 0, 0, .12);
 	--darkShadeColor: #99b7bb;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	padding: 30px;
+	color: #24292e;
+}
+
+.header {
+	position: relative;
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, rgb(126, 213, 1, 0.8), rgb(63, 191, 131, 0.6));
+	/* url("./img/hero.jpg"); */
+	/* background-size: cover;
+	background-position: top; */
+	-webkit-clip-path: polygon(17% 0, 100% 0, 100% 61%);
+	clip-path: polygon(17% 0, 100% 0, 100% 61%);
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+.logo {
+	position: relative;
+	height: 40px;
+}
+
+.heading-primary {
+	color: #24292e;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.heading-primary span {
+	display: block;
+	letter-spacing: 17.4px;
+	font-weight: 300;
+	color: #24292e;
+}
+
+.intro-container {
+	display: block;
+}

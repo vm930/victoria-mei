@@ -229,3 +229,30 @@ body {
     width: 0%; }
   100% {
     width: 100%; } }
+
+.card-content img {
+  height: 8%;
+  width: 5%; }
+
+.card-content h4 {
+  display: block; }
+
+.card {
+  background-clip: padding-box;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-sizing: border-box;
+  color: #333333;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 297.516px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  text-size-adjust: 100%; }

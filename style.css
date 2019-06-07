@@ -273,7 +273,7 @@ body {
 }
 
 .section-three {
-	padding: 50rem 0 0 0;
+	padding: 45rem 0 0 0;
 	margin-top: -10vh;
 }
 
@@ -282,16 +282,25 @@ body {
 	width: 5%;
 }
 
+.card-content label {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+}
+
 .card-content h4 {
 	display: block;
-	height: 20%;
+	font-size: 2.5rem;
+	height: 10%;
+	font-family: "LATO";
 }
 
 .card {
 	height: 30%;
-	background-color: rgb(whitesmoke, 0.8);
+	background: rgb(245, 245, 245, 0.8);
 	font-size: 1.5rem;
 	padding: 2.5rem;
 	border-radius: 3px;
-	box-shadow: 0 1.5rem 4rem rgb(black, 0.8);
+	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
+	box-sizing: border-box;
+	margin: 45px;
 }

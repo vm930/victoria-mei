@@ -7,9 +7,7 @@ Dark green: #28b485
 linear-gradient(to right bottom, #28b485, #7ed56f);
 
 */
-*,
-*::after,
-*::before {
+* {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
@@ -254,6 +252,23 @@ body {
 }
 
 .line {
+	/* height: 25px;
+	margin: auto 10px;
+	font-size: 1.3rem;
+	text-align: left;
+	background: linear-gradient(to right bottom, #28b485, #7ed56f);
+	color: whitesmoke;
+	z-index: -1; */
+}
+
+.line::before {
+	content: "";
+	width: 50%;
+	z-index: -2;
+	background: transparent;
+}
+
+.line::after {
 	height: 25px;
 	margin: auto 10px;
 	font-size: 1.3rem;
@@ -261,6 +276,7 @@ body {
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
 	color: whitesmoke;
 	z-index: -1;
+	animation: animate 1.4s;
 }
 
 @keyframes animate {
@@ -271,11 +287,12 @@ body {
 		width: 100%;
 	}
 }
-
+/* 
 .section-three {
 	padding: 45rem 0 0 0;
 	margin-top: -10vh;
-}
+	background: grey;
+} */
 
 .card-content img {
 	height: 8%;
@@ -286,6 +303,7 @@ body {
 .card-content label {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
+	height: 5%;
 }
 
 .card-content h4 {
@@ -311,4 +329,20 @@ body {
 
 .card:hover {
 	transform: translateY(-0.5rem);
+}
+
+.section-four {
+	background: yellow;
+	padding: 45rem 0 0 0;
+	margin-top: 90vh;
+}
+
+.section-four h3 {
+	text-transform: none;
+	height: 10%;
+}
+
+.section-title {
+	height: 10%;
+	margin-top: 30vh;
 }

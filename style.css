@@ -280,6 +280,7 @@ body {
 .card-content img {
 	height: 8%;
 	width: 5%;
+	margin: 30px 2px 2px 100px;
 }
 
 .card-content label {
@@ -289,18 +290,25 @@ body {
 
 .card-content h4 {
 	display: block;
+	color: #777;
 	font-size: 2.5rem;
-	height: 10%;
-	font-family: "LATO";
+	height: 6%;
+	font-family: "Lato", sans-serif;
+	border-bottom: 2px solid #777;
+	margin: 3rem;
 }
 
 .card {
-	height: 30%;
+	height: 40%;
 	background: rgb(245, 245, 245, 0.8);
 	font-size: 1.5rem;
 	padding: 2.5rem;
 	border-radius: 3px;
 	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
 	box-sizing: border-box;
-	margin: 45px;
+	margin: 10rem;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem);
 }

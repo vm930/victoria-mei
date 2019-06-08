@@ -239,6 +239,7 @@ div.title-container {
 .section-bio {
 	display: grid;
 	grid-template-columns: 1fr 0.5fr;
+	grid-column-gap: 1rem;
 	height: 100vh;
 	width: 45%;
 	margin: 0 auto;
@@ -248,9 +249,8 @@ div.title-container {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding: 25rem 0;
-	margin-top: 20vh;
 	text-transform: capitalize;
+	top: 13%;
 }
 
 .wrapper h2 {
@@ -265,41 +265,13 @@ div.title-container {
 }
 
 .line {
-	height: 25px;
-	margin: auto 10px;
+	height: 3rem;
 	font-size: 1.3rem;
 	text-align: left;
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
 	color: whitesmoke;
-	z-index: -1;
-}
-/* 
-.line::before {
-	content: "";
-	width: 50%;
-	z-index: -2;
-	background: transparent;
 }
 
-.line::after {
-	height: 25px;
-	margin: auto 10px;
-	font-size: 1.3rem;
-	text-align: left;
-	background: linear-gradient(to right bottom, #28b485, #7ed56f);
-	color: whitesmoke;
-	z-index: -1;
-	animation: animate 1.4s;
-} */
-
-@keyframes animate {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 100%;
-	}
-}
 /* 
 .section-three {
 	padding: 45rem 0 0 0;

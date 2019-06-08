@@ -331,12 +331,6 @@ body {
 	transform: translateY(-0.5rem);
 }
 
-.section-four {
-	background: yellow;
-	padding: 45rem 0 0 0;
-	margin-top: 90vh;
-}
-
 .section-four h3 {
 	text-transform: none;
 	height: 10%;
@@ -345,4 +339,10 @@ body {
 .section-title {
 	height: 10%;
 	margin-top: 30vh;
+	background: yellow;
+}
+
+.section-3-title {
+	height: 10px;
+	background: red;
 }

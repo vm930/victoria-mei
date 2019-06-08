@@ -7,9 +7,7 @@ Dark green: #28b485
 linear-gradient(to right bottom, #28b485, #7ed56f);
 
 */
-*,
-*::after,
-*::before {
+* {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
@@ -254,6 +252,23 @@ body {
 }
 
 .line {
+	/* height: 25px;
+	margin: auto 10px;
+	font-size: 1.3rem;
+	text-align: left;
+	background: linear-gradient(to right bottom, #28b485, #7ed56f);
+	color: whitesmoke;
+	z-index: -1; */
+}
+
+.line::before {
+	content: "";
+	width: 50%;
+	z-index: -2;
+	background: transparent;
+}
+
+.line::after {
 	height: 25px;
 	margin: auto 10px;
 	font-size: 1.3rem;
@@ -261,6 +276,7 @@ body {
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
 	color: whitesmoke;
 	z-index: -1;
+	animation: animate 1.4s;
 }
 
 @keyframes animate {
@@ -271,36 +287,62 @@ body {
 		width: 100%;
 	}
 }
-
+/* 
 .section-three {
 	padding: 45rem 0 0 0;
 	margin-top: -10vh;
-}
+	background: grey;
+} */
 
 .card-content img {
 	height: 8%;
 	width: 5%;
+	margin: 30px 2px 2px 100px;
 }
 
 .card-content label {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
+	height: 5%;
 }
 
 .card-content h4 {
 	display: block;
+	color: #777;
 	font-size: 2.5rem;
-	height: 10%;
-	font-family: "LATO";
+	height: 6%;
+	font-family: "Lato", sans-serif;
+	border-bottom: 2px solid #777;
+	margin: 3rem;
 }
 
 .card {
-	height: 30%;
+	height: 40%;
 	background: rgb(245, 245, 245, 0.8);
 	font-size: 1.5rem;
 	padding: 2.5rem;
 	border-radius: 3px;
 	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
 	box-sizing: border-box;
-	margin: 45px;
+	margin: 10rem;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem);
+}
+
+.section-four h3 {
+	text-transform: none;
+	height: 10%;
+}
+
+.section-title {
+	height: 10%;
+	margin-top: 30vh;
+	background: yellow;
+}
+
+.section-3-title {
+	height: 10px;
+	background: red;
 }

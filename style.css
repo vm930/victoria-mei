@@ -29,9 +29,12 @@ body {
 .header {
 	position: relative;
 	height: 95vh;
-	background-image: linear-gradient(to right bottom, #28b485, #7ed56f);
-	-webkit-clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%);
-	clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%);
+	background-color: rgb(242, 242, 242);
+	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
+	/* -webkit-clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%);
+	clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%); */
+	-webkit-clip-path: ellipse(25% 40% at 9% 46%);
+	clip-path: ellipse(25% 40% at 9% 46%);
 }
 
 .logo-box {
@@ -172,7 +175,7 @@ div.title-container {
 .heading-secondary {
 	display: inline-block;
 	position: relative;
-	margin: 2rem 2rem 2rem 2rem;
+	margin: 2rem 2rem 1rem 2rem;
 	font-size: 3.5rem;
 	font-weight: 900;
 	-webkit-background-clip: text;
@@ -190,9 +193,9 @@ div.title-container {
 }
 
 .decorative-line {
-	width: 6rem;
+	width: 9rem;
 	background: linear-gradient(to right, #28b485, #7ed56f);
-	height: 1rem;
+	height: 3px;
 }
 .heading-secondary:hover {
 	transform: translateY(-0.3rem);
@@ -241,7 +244,7 @@ div.title-container {
 	grid-template-columns: 1fr 0.5fr;
 	grid-column-gap: 1rem;
 	height: 100vh;
-	width: 45%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -250,70 +253,86 @@ div.title-container {
 	flex-direction: column;
 	position: relative;
 	text-transform: capitalize;
-	top: 13%;
+	justify-content: center;
 }
 
 .wrapper h2 {
 	display: inline-block;
 	text-align: left;
 	color: #24292e;
-	margin-top: 0rem;
+	margin: 0.8rem;
 	font-size: 1.3rem;
-	font-weight: 00;
+	font-weight: 300;
 	letter-spacing: 2px;
-	padding: 0 0 0 10px;
 }
 
 .line {
-	height: 3rem;
+	height: 2.5rem;
 	font-size: 1.3rem;
-	text-align: left;
+	text-align: right;
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
 	color: whitesmoke;
 }
 
-/* 
-.section-three {
-	padding: 45rem 0 0 0;
-	margin-top: -10vh;
-	background: grey;
-} */
+/* section 3 stacks */
 
-.card-content img {
-	height: 8%;
-	width: 5%;
-	margin: 30px 2px 2px 100px;
+.card-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-.card-content label {
-	font-size: 1.5rem;
+.img-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8rem;
+}
+
+.img-container img {
+	width: 20%;
+	margin: 1rem;
+	opacity: 0.8;
+}
+
+.img-container label {
+	display: block;
+	font-size: 1rem;
 	letter-spacing: 2px;
-	height: 5%;
+	margin: 5px;
 }
 
 .card-content h4 {
-	display: block;
-	color: #777;
+	color: rgb(40, 180, 133, 0.65);
 	font-size: 2.5rem;
-	height: 6%;
 	font-family: "Lato", sans-serif;
-	border-bottom: 2px solid #777;
+	border-bottom: 2px solid rgb(40, 180, 133, 0.65);
 	margin: 3rem;
 }
 
 .card {
-	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65%;
 	background: rgb(245, 245, 245, 0.8);
 	font-size: 1.5rem;
 	padding: 2.5rem;
 	border-radius: 3px;
 	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
 	box-sizing: border-box;
-	margin: 10rem;
+	margin: 5rem;
 }
 
 .card:hover {
 	transform: translateY(-0.5rem);
+	transition: all;
 }
 
 .section-four h3 {
@@ -321,13 +340,23 @@ div.title-container {
 	height: 10%;
 }
 
-.section-title {
-	height: 10%;
-	margin-top: 30vh;
-	background: yellow;
-}
-
 .section-3-title {
 	height: 10px;
 	background: red;
+}
+
+.deco-clip-path {
+	display: flex;
+	background-color: rgb(242, 242, 242);
+	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
+	height: 35vh;
+	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.deco-container--2 {
+	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
+	background: #f4f4f4;
+	-webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
+	clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
 }

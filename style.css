@@ -428,3 +428,51 @@ div.title-container {
 	-webkit-clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 }
+
+.footer-deco {
+	height: 30vh;
+	background-color: rgb(242, 242, 242);
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 15rem 0;
+}
+
+.footer span {
+	color: #99b7bb;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 1.6rem;
+}
+.brain {
+	opacity: 0.8;
+	height: 3%;
+	width: 3%;
+	transform: rotate(-45deg);
+	animation: brainbeat 1s infinite;
+	margin: 0 1.5rem;
+}
+
+@keyframes brainbeat {
+	0% {
+		transform: scale(.75);
+	}
+	20% {
+		transform: scale(1);
+	}
+	40% {
+		transform: scale(.75);
+	}
+	60% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(.75);
+	}
+	100% {
+		transform: scale(.75);
+	}
+}

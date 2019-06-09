@@ -33,8 +33,10 @@ body {
 	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
 	/* -webkit-clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%);
 	clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%); */
-	-webkit-clip-path: ellipse(25% 40% at 9% 46%);
-	clip-path: ellipse(25% 40% at 9% 46%);
+	/* -webkit-clip-path: ellipse(25% 40% at 9% 46%);
+	clip-path: ellipse(25% 40% at 9% 46%); */
+	-webkit-clip-path: circle(59.7% at 38% 0);
+	clip-path: circle(59.7% at 38% 0);
 }
 
 .logo-box {
@@ -168,7 +170,6 @@ div.title-container {
 .section-about {
 	display: flex;
 	flex-direction: column;
-	padding: 25rem 0 0 0;
 	margin-top: -12vh;
 }
 
@@ -253,7 +254,7 @@ div.title-container {
 	flex-direction: column;
 	position: relative;
 	text-transform: capitalize;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .wrapper h2 {
@@ -349,7 +350,7 @@ div.title-container {
 	display: flex;
 	background-color: rgb(242, 242, 242);
 	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
-	height: 35vh;
+	height: 55vh;
 	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 }

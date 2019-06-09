@@ -131,7 +131,7 @@ div.title-container {
 }
 
 .btn-start {
-	background: linear-gradient(to right bottom, #28b485, #7ed56f);
+	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	color: white;
 	opacity: 0.85;
 	font-size: 1.6rem;
@@ -304,16 +304,19 @@ div.title-container {
 
 .img-container label {
 	display: block;
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-weight: 500;
 	letter-spacing: 2px;
 	margin: 5px;
+	color: #829779;
 }
 
 .card-content h4 {
-	color: rgb(40, 180, 133, 0.65);
+	/* color: rgb(40, 180, 133, 0.65); */
+	color: #829779;
 	font-size: 2.5rem;
 	font-family: "Lato", sans-serif;
-	border-bottom: 2px solid rgb(40, 180, 133, 0.65);
+	border-bottom: 2px solid #829779;
 	margin: 3rem;
 }
 
@@ -403,7 +406,8 @@ div.title-container {
 }
 
 .section-three {
-	background-image: linear-gradient(to right, #28b485, #7ed56f);
+	/* background-image: linear-gradient(to right, #28b485, #7ed56f); */
+	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	height: 100%;
 	width: 100%;
 }
@@ -415,4 +419,12 @@ div.title-container {
 	height: 35vh;
 	-webkit-clip-path: circle(56.0% at 51% 100%);
 	clip-path: circle(56.0% at 51% 100%);
+}
+
+.deco-div {
+	display: flex;
+	background: linear-gradient(to right top, #99b7bb, #7ed56f);
+	height: 35vh;
+	-webkit-clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
+	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 }

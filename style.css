@@ -429,6 +429,31 @@ div.title-container {
 	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 }
 
+/* blog section */
+
+.blogs-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.blog-component {
+	height: 20rem;
+	width: 30%;
+	margin: 2rem;
+	/* background-color: whitesmoke; */
+	background: yellowgreen;
+}
+
+/*  */
+
+/* Footer section*/
+
+.section-four {
+	background: yellow;
+	height: 80vh;
+}
+
 .footer-deco {
 	height: 30vh;
 	background-color: rgb(242, 242, 242);
@@ -437,11 +462,11 @@ div.title-container {
 .footer {
 	display: flex;
 	justify-content: center;
-	padding: 15rem 0;
+	padding-top: 15rem;
 }
 
 .footer span {
-	color: #99b7bb;
+	color: #829779;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
 	letter-spacing: 2px;

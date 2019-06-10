@@ -445,13 +445,46 @@ div.title-container {
 	background: yellowgreen;
 }
 
-/*  */
+.deco-blank {
+	background: whitesmoke;
+	height: 35vh;
+}
 
 /* Footer section*/
 
-.section-four {
-	background: yellow;
+.section-five {
 	height: 80vh;
+}
+
+.deco-message {
+	height: 80vh;
+	background-color: rgb(242, 242, 242);
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10rem;
+}
+
+.contact span {
+	font-size: 5rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: #829779;
+}
+
+.contact a {
+	font-size: 3rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #28b485;
 }
 
 .footer-deco {

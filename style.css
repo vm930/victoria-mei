@@ -26,30 +26,27 @@ body {
 	background: #f7f7f7;
 }
 
-.header {
-	position: relative;
+.deco-header {
+	/* position: relative; */
 	height: 95vh;
 	background-color: rgb(242, 242, 242);
 	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
-	/* -webkit-clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%);
-	clip-path: polygon(0 0, 24% 0, 68% 0, 17% 89%, 0 70%); */
-	/* -webkit-clip-path: ellipse(25% 40% at 9% 46%);
-	clip-path: ellipse(25% 40% at 9% 46%); */
 	-webkit-clip-path: circle(59.7% at 38% 0);
 	clip-path: circle(59.7% at 38% 0);
 }
 
-.logo-box {
-	position: absolute;
+.logo-container {
+	/* position: relative; */
 	top: 4rem;
-	right: 4rem;
+	left: 4rem;
+	width: 5%;
+	float: right;
+	z-index: 100;
 }
 
-.logo {
-	position: relative;
-	height: 4rem;
+.logo-container img {
+	width: 100%;
 }
-
 .intro-container {
 	position: absolute;
 	top: 0;

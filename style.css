@@ -75,9 +75,6 @@ body {
 	text-align: center;
 	margin-bottom: 2rem;
 }
-div.title-container {
-	padding-left: 20rem;
-}
 
 .span-roles span {
 	display: block;
@@ -270,6 +267,10 @@ div.title-container {
 	justify-content: flex-start;
 }
 
+.wrapper div span {
+	padding-right: 2px;
+}
+
 .wrapper h2 {
 	display: inline-block;
 	text-align: left;
@@ -279,8 +280,11 @@ div.title-container {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
+.percentage {
+	margin: 10px;
+}
 
-.line {
+.filler {
 	height: 2.5rem;
 	font-size: 1.3rem;
 	text-align: right;

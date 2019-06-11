@@ -259,7 +259,7 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	/* position: relative; */
 	text-transform: capitalize;
 	justify-content: flex-start;
 }
@@ -277,16 +277,50 @@ body {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
+
 .percentage {
-	margin: 10px;
+	/* margin: 10px; */
+	position: relative;
+	left: 90%;
+	top: -2rem;
+	line-height: 2rem;
+	color: #24292e;
+}
+
+.bargraph {
+	height: 2.5rem;
+	/* text-align: right; */
+	width: 100%;
 }
 
 .filler {
+	width: 0%;
 	height: 2.5rem;
-	font-size: 1.3rem;
-	text-align: right;
+	/* text-align: right; */
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
-	color: whitesmoke;
+	transition: 2s ease;
+}
+
+.animateGraph1 {
+	width: 80%;
+}
+.animateGraph2 {
+	width: 90%;
+}
+.animateGraph3 {
+	width: 80%;
+}
+.animateGraph4 {
+	width: 80%;
+}
+.animateGraph5 {
+	width: 70%;
+}
+.animateGraph6 {
+	width: 50%;
+}
+.animateGraph7 {
+	width: 90%;
 }
 
 /* section 3 stacks */

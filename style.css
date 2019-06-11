@@ -460,7 +460,7 @@ body {
 }
 
 .deco-blank {
-	background: whitesmoke;
+	background: #f7f7f7;
 	height: 35vh;
 }
 
@@ -471,7 +471,7 @@ body {
 }
 
 .deco-message {
-	height: 80vh;
+	height: 90vh;
 	background-color: rgb(242, 242, 242);
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
 	clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
@@ -480,29 +480,46 @@ body {
 .contact {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	margin: 10rem;
+	/* margin: 10rem; */
 }
 
 .contact span {
-	font-size: 5rem;
+	font-size: 2rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: #829779;
+	margin: 1rem;
 }
 
 .contact a {
-	font-size: 3rem;
+	font-size: 1.6rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	letter-spacing: 2px;
+	color: whitesmoke;
+}
+
+.material-icons {
 	color: #28b485;
 }
 
+.download-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.btn-start span {
+	font-size: 2rem;
+	margin-top: 5px;
+	color: white;
+}
+
 .footer-deco {
-	height: 30vh;
+	height: 25vh;
 	background-color: rgb(242, 242, 242);
 }
 
@@ -547,17 +564,4 @@ body {
 	100% {
 		transform: scale(.75);
 	}
-}
-
-.icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
-}
-
-.icon icon-download2 {
-	background: green;
 }

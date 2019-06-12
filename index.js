@@ -1,18 +1,24 @@
 const checkboxTag = document.querySelector('.nav-checkbox');
 const navlinkTag = document.querySelector('.navlinks');
+const textContent = ["a full stack web developer","a digital content creator","a teacher"]
+const animationTextTag = document.querySelector(".animation-text");
+const navBurgerTag = document.querySelector(".burger")
 
-checkboxTag.addEventListener('click', function(e) {
-	// console.log(e.target.checked);
-	if (e.target.checked) {
-		navlinkTag.style.backgroundColor = ' rgb(153, 183, 187, 0.7)';
-	} else {
-		navlinkTag.style.backgroundColor = 'transparent';
-	}
-});
 
-document.addEventListener('scroll', function() {
-	animateGraph();
-});
+// document.querySelector("button").addEventListener("click", function(e){
+//   console.log(animationTextTag.innerText)
+// //   animationTextTag.innerText = textContent[1]
+// setInterval(renderText,3000)
+// })
+
+//  window.setTimeout(renderText, 2000)
+
+// function renderText (){   
+//     textContent.forEach(title => {
+//         animationTextTag.innerText = title;   
+//     });
+// }
+
 
 function animateGraph() {
 	document.querySelector('.line1 .filler').classList.add('animateGraph1');
@@ -29,23 +35,6 @@ function animateGraph() {
 
 	document.querySelector('.line7 .filler').classList.add('animateGraph7');
 }
-
-// // Scroll to specific values
-// // scrollTo is the same
-// window.scroll({
-//     top: 2500,
-//     left: 0,
-//     behavior: 'smooth'
-// });
-
-// // Scroll certain amounts from current position
-// window.scrollBy({
-//     top: 100, // could be negative value
-//     left: 0,
-//     behavior: 'smooth'
-// });
-
-// Scroll to a certain element
 
 
 function scolltoHome() {
@@ -80,6 +69,7 @@ function scolltoContact() {
 }
 
 
+
 navlinkTag.addEventListener('click', function(e) {
     // console.log(e.target.innerText);
     if(e.target.innerText==="Home"){
@@ -104,7 +94,25 @@ navlinkTag.addEventListener('click', function(e) {
 });
 
 
+// nav bar animations
 
-// document.querySelector('button').addEventListener('click', function() {
-// 	scollfun();
-// });
+checkboxTag.addEventListener('click', function(e) {
+	// console.log(e.target.checked);
+	if (e.target.checked) {    
+         navlinkTag.style.width = "20%";
+        console.log(navBurgerTag);
+	} else {
+        navlinkTag.style.width = "0%";
+	}
+});
+
+//progress bar animations
+
+document.addEventListener('scroll', function() {
+	animateGraph();
+});
+
+// document.querySelector(".btn btn-start btn-animated").addEventListener("click", function(e){
+//     e.preventDefault();
+//     scolltoProjects();
+// })

@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="./style.css">
         <!-- adding svg icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       
         <script src="./index.js" defer></script>
-        
+        <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js" defer></script>
         <title>Victoria Mei | Full Stack Developer</title>
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/114/brain_1f9e0.png" type="image/icon type">
     </head>
     <body>
         <div class="nav">
@@ -24,22 +24,22 @@
                 
             <ul class="navlinks">
                 <li>
-                    <span>Home</span>
+                    <span class="nav-option">Home</span>
                 </li>
                 <li>
-                    <span>About</span>
+                    <span class="nav-option">About</span>
                 </li>
                 <li>
-                    <span>Skills</span>
+                    <span class="nav-option">Skills</span>
                 </li>
                 <li>
-                    <span>Projects</span>
+                    <span class="nav-option">Projects</span>
                 </li>
                 <li>
-                    <span>Blogs</span>
+                    <span class="nav-option">Blogs</span>
                 </li>
                 <li>
-                    <span>Contact</span>
+                    <span class="nav-option">Contact</span>
                 </li>
             </ul>
 
@@ -61,17 +61,13 @@
             <div class="intro-container">
                 <div class="title-container">
                 <h1 class="heading-greeting">Hi, I'm Victoria </h1>
-                <div class="span-roles">
-                    <span>a full stack web developer</span>
-                    <!-- <span>a video creator</span>
-                    <span>a bloger</span> -->
+                <div class="animation-text">
+                    <span  class= "typer" data-words=
+                    "a full stack web developer, a digital content creator, a teacher" data-delay="50" data-colors="#24292e" style="font-size:2rem;"></span>
                 </div>
                 </div>
-
                 <a href="#" class="btn btn-start btn-animated">Discovery My Work</a>
-                <button>click me</button>
             </div>
-
 
         <main>
 
@@ -231,12 +227,12 @@
 
 <!-- section 4 projects starts here-->
         <div class="section-four">
-                <div class="deco-heading">
+    
                 <div class="heading-secondary-title">
                     <h3 class="heading-secondary">Selected Projects</h3>
                     <div class="decorative-line"></div>
                 </div>
-        </div>
+    
 
         <div class="project-container">
                 <div class="project-component">
@@ -363,13 +359,17 @@
 
 <!-- section 6 contact me section -->
         <div class="section-six">
+                <div class="heading-secondary-title">
+                    <h3 class="heading-secondary">Contact Me</h3>
+                    <div class="decorative-line"></div>
+                </div>
 
                 <div class="deco-message">
                         
                         <div class="contact">
-                            <span>Let's Design Something.</span>
-                            <span>Let's Create Something.</span>
-                            <span>Let's Build Something.</span>
+                        <h1> Let's
+                            <span class="typer" data-words="design something, create something, build something"  data-delay="100" data-colors="#28b485,#55c57a,#28b485">
+                        </h1>
                             <a class= "btn-start" herf="#"><span>contact me</span></a>
                             <div class="download-container">
                                 <a id="download" href="./img/dummie test.docx" download>

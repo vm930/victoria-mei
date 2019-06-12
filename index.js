@@ -15,7 +15,9 @@ const wrapper = document.querySelector('.wrapper');
 // 	fillerTag4.classList.add('animateGraph4');
 // }
 
-document.addEventListener('scroll', animateGraph());
+document.addEventListener('scroll', function() {
+	animateGraph();
+});
 
 function animateGraph() {
 	document.querySelector('.line1 .filler').classList.toggle('animateGraph1');
@@ -32,3 +34,29 @@ function animateGraph() {
 
 	document.querySelector('.line7 .filler').classList.toggle('animateGraph7');
 }
+
+// // Scroll to specific values
+// // scrollTo is the same
+// window.scroll({
+//     top: 2500,
+//     left: 0,
+//     behavior: 'smooth'
+// });
+
+// // Scroll certain amounts from current position
+// window.scrollBy({
+//     top: 100, // could be negative value
+//     left: 0,
+//     behavior: 'smooth'
+// });
+
+// Scroll to a certain element
+function scollfun() {
+	document.querySelector('.card-container').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+
+document.querySelector('button').addEventListener('click', function() {
+	scollfun();
+});

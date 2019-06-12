@@ -33,14 +33,15 @@ body {
 /* nav bar */
 
 .nav {
-	/* display: flex;
-	justify-content: flex-start;
-	align-items: center; */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .nav input {
 	display: none;
 }
+
 
 .navlinks {
 	position: fixed;
@@ -53,10 +54,8 @@ body {
 	flex-direction: column;
 	justify-content:center;
 	z-index: 1500;
-	/* animation-name: moveInLeft;
-	animation-duration: 1s; */
 	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
-	/* transition: transform 2s; */
+	transition: transform 2s;
 }
 
 .nav-option {
@@ -84,12 +83,19 @@ body {
 	z-index: 2000;
 }
 
+
 .burgerline {
-	width: 25px;
+	width: 3rem;
 	height: 3px;
 	background-color: #2c4848;
 	margin: 5px;
 	z-index: 2000;
+}
+
+.crossline {
+	font-size: 3rem;
+	color: transparent;
+	position:relative;
 }
 
 .deco-header {
@@ -351,9 +357,9 @@ body {
 }
 
 .percentage {
-	/* margin: 10px; */
+	margin-left: 5rem;
 	position: relative;
-	left: 90%;
+	left: 100%;
 	top: -2rem;
 	line-height: 2rem;
 	color: #24292e;
@@ -361,14 +367,12 @@ body {
 
 .bargraph {
 	height: 2.5rem;
-	/* text-align: right; */
 	width: 100%;
 }
 
 .filler {
 	width: 0%;
 	height: 2.5rem;
-	/* text-align: right; */
 	background: linear-gradient(to right bottom, #28b485, #7ed56f);
 	transition: 2s ease;
 }

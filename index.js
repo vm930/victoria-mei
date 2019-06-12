@@ -4,20 +4,12 @@ const textContent = ["a full stack web developer","a digital content creator","a
 const animationTextTag = document.querySelector(".animation-text");
 const navBurgerTag = document.querySelector(".burgerline")
 const discoverBtn = document.querySelector(".btn-start")
+const burgerline1 = document.querySelector(".line1")
+const burgerline2 = document.querySelector(".line2")
+const burgerline3 = document.querySelector(".line3")
+const burgerline = document.querySelector(".burgerline")
+const cross = document.querySelector(".crossline")
 
-// document.querySelector("button").addEventListener("click", function(e){
-//   console.log(animationTextTag.innerText)
-// //   animationTextTag.innerText = textContent[1]
-// setInterval(renderText,3000)
-// })
-
-//  window.setTimeout(renderText, 2000)
-
-// function renderText (){   
-//     textContent.forEach(title => {
-//         animationTextTag.innerText = title;   
-//     });
-// }
 
 
 function animateGraph() {
@@ -69,7 +61,6 @@ function scolltoContact() {
 }
 
 
-
 navlinkTag.addEventListener('click', function(e) {
     // console.log(e.target.innerText);
     if(e.target.innerText==="Home"){
@@ -95,15 +86,23 @@ navlinkTag.addEventListener('click', function(e) {
 
 
 // nav bar animations
-
 checkboxTag.addEventListener('click', function(e) {
-	// console.log(e.target.checked);
-	if (e.target.checked) {    
+	// console.log(burgerline1);
+	if (e.target.checked) {
          navlinkTag.style.width = "20%";
-         navBurgerTag.style.width = "0px";
+         burgerline1.style.backgroundColor = "transparent";
+         burgerline2.style.backgroundColor = "transparent";
+         burgerline3.style.backgroundColor = "transparent";
+         
+        //  cross.style.color = "#2c4848"
+        
 	} else {
         navlinkTag.style.width = "0%";
-        navBurgerTag.style.width = "25px";
+        // cross.style.color = "transparent"
+         burgerline.style.backgroundColor = "#2c4848;";
+          burgerline1.style.backgroundColor = "#2c4848";
+         burgerline2.style.backgroundColor = "#2c4848";
+         burgerline3.style.backgroundColor = "#2c4848";
 	}
 });
 
@@ -125,10 +124,7 @@ document.querySelector(".statment--2").addEventListener("click",function(e){
     if (e.target.innerText === "get in touch"){
         scolltoContact();
     }
-    
-    
 })
-
 
 //progress bar animations
 

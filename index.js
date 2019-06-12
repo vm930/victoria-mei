@@ -2,8 +2,8 @@ const checkboxTag = document.querySelector('.nav-checkbox');
 const navlinkTag = document.querySelector('.navlinks');
 const textContent = ["a full stack web developer","a digital content creator","a teacher"]
 const animationTextTag = document.querySelector(".animation-text");
-const navBurgerTag = document.querySelector(".burger")
-
+const navBurgerTag = document.querySelector(".burgerline")
+const discoverBtn = document.querySelector(".btn-start")
 
 // document.querySelector("button").addEventListener("click", function(e){
 //   console.log(animationTextTag.innerText)
@@ -100,19 +100,38 @@ checkboxTag.addEventListener('click', function(e) {
 	// console.log(e.target.checked);
 	if (e.target.checked) {    
          navlinkTag.style.width = "20%";
-        console.log(navBurgerTag);
+         navBurgerTag.style.width = "0px";
 	} else {
         navlinkTag.style.width = "0%";
+        navBurgerTag.style.width = "25px";
 	}
 });
+
+//quick link navbar 
+
+discoverBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    scolltoProjects();
+})
+
+document.querySelector(".statment--2").addEventListener("click",function(e){
+    e.preventDefault()
+    if (e.target.innerText === "my work"){
+        scolltoProjects();
+    }
+    if (e.target.innerText === "blogs"){
+        scolltoBlogs();
+    }
+    if (e.target.innerText === "get in touch"){
+        scolltoContact();
+    }
+    
+    
+})
+
 
 //progress bar animations
 
 document.addEventListener('scroll', function() {
 	animateGraph();
 });
-
-// document.querySelector(".btn btn-start btn-animated").addEventListener("click", function(e){
-//     e.preventDefault();
-//     scolltoProjects();
-// })

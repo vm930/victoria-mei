@@ -30,8 +30,78 @@ body {
 	background: #f7f7f7;
 }
 
+/* nav bar */
+
+.nav {
+	/* display: flex;
+	justify-content: flex-start;
+	align-items: center; */
+}
+
+.nav input {
+	display: none;
+}
+
+.navlinks {
+	position: fixed;
+	left: 0px;
+	width: 15%;
+	height: 98vh;
+	/* top: 2.3vh; */
+	/* top: 2.4vh; */
+	/* background: transparent; */
+	/* background-color: rgb(153, 183, 187, 0.7); */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	animation: navlinkfade 1s ease-in;
+	transition: transform 0.5s ease-in;
+	z-index: 1500;
+}
+
+.navlinks span {
+	cursor: pointer;
+	color: whitesmoke;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-size: 1.6rem;
+}
+
+.navlinks li {
+	list-style: none;
+	text-align: center;
+}
+/* 
+.navlinks li::hover {
+	color: #7ed56f;
+} */
+
+@keyframes navlinkfade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.burger {
+	cursor: pointer;
+	z-index: 2000;
+	position: fixed;
+	top: 6.5rem;
+	left: 6.5rem;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: #28b485;
+	margin: 5px;
+	z-index: 2000;
+}
+
 .deco-header {
-	/* position: relative; */
 	height: 95vh;
 	background-color: rgb(242, 242, 242);
 	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
@@ -457,8 +527,7 @@ body {
 	height: 3px;
 }
 
-.section-three {
-	/* background-image: linear-gradient(to right, #28b485, #7ed56f); */
+.section-four {
 	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	height: 100%;
 	width: 100%;
@@ -504,7 +573,7 @@ body {
 
 /* Footer section*/
 
-.section-five {
+.section-six {
 	height: 80vh;
 }
 

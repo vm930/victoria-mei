@@ -1,38 +1,33 @@
-const fillerTag1 = document.querySelector('.filler1');
-const fillerTag2 = document.querySelector('.filler2');
-const fillerTag3 = document.querySelector('.filler3');
-const fillerTag4 = document.querySelector('.filler4');
+const checkboxTag = document.querySelector('.nav-checkbox');
+const navlinkTag = document.querySelector('.navlinks');
 
-const wrapper = document.querySelector('.wrapper');
-
-// function animateGraph() {
-// 	fillerTag1.classList.add('animateGraph1');
-
-// 	fillerTag2.classList.add('animateGraph2');
-
-// 	fillerTag3.classList.add('animateGraph3');
-
-// 	fillerTag4.classList.add('animateGraph4');
-// }
+checkboxTag.addEventListener('click', function(e) {
+	// console.log(e.target.checked);
+	if (e.target.checked) {
+		navlinkTag.style.backgroundColor = ' rgb(153, 183, 187, 0.7)';
+	} else {
+		navlinkTag.style.backgroundColor = 'transparent';
+	}
+});
 
 document.addEventListener('scroll', function() {
 	animateGraph();
 });
 
 function animateGraph() {
-	document.querySelector('.line1 .filler').classList.toggle('animateGraph1');
+	document.querySelector('.line1 .filler').classList.add('animateGraph1');
 
-	document.querySelector('.line2 .filler').classList.toggle('animateGraph2');
+	document.querySelector('.line2 .filler').classList.add('animateGraph2');
 
-	document.querySelector('.line3 .filler').classList.toggle('animateGraph3');
+	document.querySelector('.line3 .filler').classList.add('animateGraph3');
 
-	document.querySelector('.line4 .filler').classList.toggle('animateGraph4');
+	document.querySelector('.line4 .filler').classList.add('animateGraph4');
 
-	document.querySelector('.line5 .filler').classList.toggle('animateGraph5');
+	document.querySelector('.line5 .filler').classList.add('animateGraph5');
 
-	document.querySelector('.line6 .filler').classList.toggle('animateGraph6');
+	document.querySelector('.line6 .filler').classList.add('animateGraph6');
 
-	document.querySelector('.line7 .filler').classList.toggle('animateGraph7');
+	document.querySelector('.line7 .filler').classList.add('animateGraph7');
 }
 
 // // Scroll to specific values
@@ -51,12 +46,65 @@ function animateGraph() {
 // });
 
 // Scroll to a certain element
-function scollfun() {
-	document.querySelector('.card-container').scrollIntoView({
+
+
+function scolltoHome() {
+	document.querySelector('.intro-container').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+function scolltoAbout() {
+	document.querySelector('.section-two').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+function scolltoSkills() {
+	document.querySelector('.section-three').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+function scolltoProjects() {
+	document.querySelector('.section-four').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+function scolltoBlogs() {
+	document.querySelector('.section-five').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+function scolltoContact() {
+	document.querySelector('.section-six').scrollIntoView({
 		behavior: 'smooth'
 	});
 }
 
-document.querySelector('button').addEventListener('click', function() {
-	scollfun();
+
+navlinkTag.addEventListener('click', function(e) {
+    // console.log(e.target.innerText);
+    if(e.target.innerText==="Home"){
+        
+        scolltoHome();
+    }
+    if (e.target.innerText === "About"){
+        scolltoAbout();
+    }
+    if(e.target.innerText==="Skills"){
+        scolltoSkills();
+    }
+    if (e.target.innerText === "Projects"){
+        scolltoProjects()
+    }
+    if(e.target.innerText==="Blogs"){
+        scolltoBlogs()
+    }
+    if (e.target.innerText === "Contact"){
+        scolltoContact()
+    }
 });
+
+
+
+// document.querySelector('button').addEventListener('click', function() {
+// 	scollfun();
+// });

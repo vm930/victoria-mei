@@ -42,17 +42,16 @@ body {
 	display: none;
 }
 
-
 .navlinks {
 	position: fixed;
 	left: 0px;
-	top:0px;
+	top: 0px;
 	bottom: 0px;
 	width: 0%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
+	justify-content: center;
 	z-index: 1500;
 	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	transition: transform 2s;
@@ -66,7 +65,7 @@ body {
 	font-size: 1.6rem;
 }
 
-.nav-option:hover{
+.nav-option:hover {
 	color: #2c4848;
 }
 .navlinks li {
@@ -83,11 +82,10 @@ body {
 	z-index: 2000;
 }
 
-.burger:hover{
+.burger:hover {
 	opacity: 0.7;
 	transform: translateY(-0.3rem);
 }
-
 
 .burgerline {
 	width: 3rem;
@@ -100,7 +98,7 @@ body {
 .crossline {
 	font-size: 3rem;
 	color: transparent;
-	position:relative;
+	position: relative;
 }
 
 .deco-header {
@@ -112,19 +110,16 @@ body {
 }
 
 .logo-container {
-	display:flex;	
+	display: flex;
 	justify-content: flex-end;
 }
 
-
-.icon-container{
+.icon-container {
 	margin: 0.8rem;
 	width: 4%;
-	
 }
 
-
-.icon-img:hover{
+.icon-img:hover {
 	opacity: 0.7;
 	transform: translateY(-0.3rem);
 }
@@ -132,9 +127,8 @@ body {
 .icon-img {
 	width: 100%;
 	opacity: 0.8;
-	cursor:pointer;
+	cursor: pointer;
 }
-
 
 /* 
 .icon-container img {
@@ -196,7 +190,7 @@ body {
 		opacity: 0;
 		transform: translateX(-10rem);
 	}
-	
+
 	100% {
 		opacity: 1;
 		transform: translate(0rem);
@@ -245,8 +239,6 @@ body {
 	color: #3fbf83;
 	border: 0.2rem solid #3fbf83;
 }
-
-
 
 .btn-animated {
 	animation: btn-In 1s ease-out .6s;
@@ -327,9 +319,9 @@ body {
 
 .para-container {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	width: 80%;
-	justify-content:center;
+	justify-content: center;
 }
 
 .label-bold {
@@ -337,7 +329,7 @@ body {
 	font-size: 3rem;
 	font-weight: bold;
 	letter-spacing: 2px;
-	color:#99b7bb;
+	color: #99b7bb;
 }
 
 .statment {
@@ -348,13 +340,12 @@ body {
 	letter-spacing: 2px;
 	color: #99b7bb;
 	opacity: 0.8;
-
 }
 
-.statment--1{
+.statment--1 {
 	padding-top: 2rem;
 	font-size: 1.6rem;
-	letter-spacing:1px;
+	letter-spacing: 1px;
 	color: #2c4848;
 }
 
@@ -447,22 +438,51 @@ body {
 
 /* section 3 stacks */
 .section-three {
-	height: 100vh
+	height: 100vh;
 }
 
-.skills-container{
-	grid-template-columns: 1fr 1fr;
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 	grid-column-gap: 0.5rem;
+	height: 100vh;
 }
+
+.card-description {
+	color: red;
+	height: 100vh;
+	border: solid 1px orange;
+}
+
+/* this is for the cards of stacks on the right */
 
 .card-container {
-	/* grid-template-columns: 1fr 1fr;
-	grid-column-gap: 0.5rem; */
-	display:flex;
+	display: flex;
 	flex-direction: column;
-	height: 100%;
-	width: 50%;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	/* margin: 0 auto; */
+}
+
+.card {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 3px;
+	height: 25%;
+	width: 100%;
+	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
+	box-sizing: border-box;
+	margin: 1rem;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: inherit;
+	width: inherit;
 }
 
 .img-container {
@@ -470,13 +490,6 @@ body {
 	flex-direction: row;
 	align-items: center;
 	margin: 2rem;
-}
-
-.card-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 }
 
 .img-container img {
@@ -503,21 +516,6 @@ body {
 	margin: 3rem;
 }
 
-.card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 20%;
-	width: 100%;
-	background: rgb(245, 245, 245, 0.8);
-	font-size: 1.5rem;
-	padding: 2.5rem;
-	border-radius: 3px;
-	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
-	box-sizing: border-box;
-	margin: 5rem;
-}
-
 .card:hover {
 	transform: translateY(-0.5rem);
 	transition: all;
@@ -525,35 +523,21 @@ body {
 
 /* section 4 */
 
-.section-four{
-	height:100vh;
+.section-four {
+	height: 100vh;
 }
 
-.section-four h3 {
-	text-transform: none;
-	height: 50%;
-}
-
-
-.deco-clip-path {
+.project-container {
 	display: flex;
-	background-color: rgb(242, 242, 242);
-	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
-	height: 50vh;
-	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-}
-
-.deco-container--2 {
-	/* background-image: linear-gradient(to right bottom, #28b485, #7ed56f); */
-	background: #f4f4f4;
-	-webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
-	clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
+	flex-direction: row-reverse;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
 }
 
 .project-component {
-	width: 60%;
-	height: 55rem;
+	width: 100%;
+	height: 20rem;
 	background-color: whitesmoke;
 	box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
 	display: flex;
@@ -563,6 +547,25 @@ body {
 	border-radius: 7px;
 	transition: all .3s;
 	margin: 2rem 1rem 6rem;
+}
+
+.section-four h3 {
+	text-transform: none;
+	height: 50%;
+}
+
+.deco-clip-path {
+	display: flex;
+	background-color: rgb(242, 242, 242);
+	height: 50vh;
+	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.deco-container--2 {
+	background: #f4f4f4;
+	-webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
+	clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
 }
 
 .heading-secondary--2 {
@@ -596,7 +599,7 @@ body {
 	height: 100%;
 	width: 100%;
 }
-/* 
+
 .deco-heading {
 	display: flex;
 	background-color: rgb(242, 242, 242);
@@ -604,12 +607,12 @@ body {
 	height: 35vh;
 	-webkit-clip-path: circle(56.0% at 51% 100%);
 	clip-path: circle(56.0% at 51% 100%);
-} */
+}
 
 .deco-div {
 	display: flex;
 	background: linear-gradient(to right top, #99b7bb, #7ed56f);
-	height: 35vh;
+	height: 100vh;
 	-webkit-clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 }
@@ -631,7 +634,7 @@ body {
 
 .deco-blank {
 	background: #f7f7f7;
-	height: 35vh;
+	height: 40vh;
 }
 
 /* Footer section*/
@@ -664,7 +667,7 @@ body {
 	margin: 5rem;
 }
 
-.contact  span{
+.contact span {
 	font-size: 4rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
@@ -693,8 +696,7 @@ body {
 	font-size: 2rem;
 	margin-top: 5px;
 	color: white;
-	text-decoration:none;
-
+	text-decoration: none;
 }
 
 .footer-deco {

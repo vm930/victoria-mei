@@ -7,6 +7,19 @@ Dark green: #28b485
 linear-gradient(to right bottom, #28b485, #7ed56f);
 
 */
+
+.roots {
+	--main-bg-color: coral;
+	--body-background: #f7f7f7;
+	--body-dark: #24292e;
+	--light-grey: #99b7bb;
+	--light-green: #7ed56f;
+	--medium-green: #55c57a;
+	--dark-green: #28b485;
+	--deco-color: rgb(242, 242, 242);
+	--font-dark-color: #2c4848;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -459,30 +472,43 @@ body {
 .card-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
+	background: linear-gradient(to left top, #99b7bb, #f7f7f7);
 	/* margin: 0 auto; */
 }
 
 .card {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	border-radius: 3px;
-	height: 25%;
-	width: 100%;
+	border-radius: 2px;
+	height: 20%;
 	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
 	box-sizing: border-box;
 	margin: 1rem;
+	background: #f7f7f7;
 }
 
 .card-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: inherit;
 	width: inherit;
+}
+
+.card-content h4 {
+	color: #99b7bb;
+	border-bottom: 1px solid #99b7bb;
+	font-size: 1.6rem;
+	font-family: "Lato", sans-serif;
+	margin: 1rem;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem);
+	transition: all;
 }
 
 .img-container {
@@ -490,35 +516,22 @@ body {
 	flex-direction: row;
 	align-items: center;
 	margin: 2rem;
+	width: 80%;
 }
 
 .img-container img {
-	width: 10%;
-	margin: 1rem;
+	width: 8%;
+	margin: 1px;
 	opacity: 0.8;
 }
 
 .img-container label {
 	display: block;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 	letter-spacing: 2px;
-	margin: 5px;
-	color: #829779;
-}
-
-.card-content h4 {
-	/* color: rgb(40, 180, 133, 0.65); */
-	color: #829779;
-	font-size: 2.5rem;
-	font-family: "Lato", sans-serif;
-	border-bottom: 2px solid #829779;
-	margin: 3rem;
-}
-
-.card:hover {
-	transform: translateY(-0.5rem);
-	transition: all;
+	margin: 1.6rem;
+	color: var(--body-dark);
 }
 
 /* section 4 */

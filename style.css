@@ -78,9 +78,14 @@ body {
 .burger {
 	cursor: pointer;
 	position: fixed;
-	top: 6.5rem;
+	top: 4.5rem;
 	left: 6.5rem;
 	z-index: 2000;
+}
+
+.burger:hover{
+	opacity: 0.7;
+	transform: translateY(-0.3rem);
 }
 
 
@@ -107,16 +112,40 @@ body {
 }
 
 .logo-container {
-	top: 4rem;
-	left: 4rem;
-	width: 5%;
-	float: right;
-	z-index: 100;
+	display:flex;	
+	justify-content: flex-end;
 }
 
-.logo-container img {
-	width: 100%;
+
+.icon-container{
+	margin: 0.8rem;
+	width: 4%;
+	
 }
+
+
+.icon-img:hover{
+	opacity: 0.7;
+	transform: translateY(-0.3rem);
+}
+
+.icon-img {
+	width: 100%;
+	opacity: 0.8;
+	cursor:pointer;
+}
+
+
+/* 
+.icon-container img {
+	width: 100%;
+	opacity: 0.8;
+	cursor:pointer;
+} */
+
+/* .logo-container img {
+	width: 100%;
+} */
 .intro-container {
 	position: absolute;
 	top: 0;
@@ -297,8 +326,10 @@ body {
 }
 
 .para-container {
-	width: 60%;
-	margin-right: 5rem;
+	display: flex;
+	flex-direction:column;
+	width: 80%;
+	justify-content:center;
 }
 
 .label-bold {
@@ -306,17 +337,33 @@ body {
 	font-size: 3rem;
 	font-weight: bold;
 	letter-spacing: 2px;
+	color:#99b7bb;
 }
 
 .statment {
-	padding-top: 4rem;
+	padding-top: 2rem;
+	margin-left: 5rem;
+	font-size: 3rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #99b7bb;
+	opacity: 0.8;
+
+}
+
+.statment--1{
+	padding-top: 2rem;
 	font-size: 1.6rem;
+	letter-spacing:1px;
+	color: #2c4848;
 }
 
 .statment--2 {
 	padding-top: 2rem;
 	display: block;
 	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 2px;
 }
 
 .section-about a {
@@ -328,9 +375,9 @@ body {
 .section-bio {
 	display: grid;
 	grid-template-columns: 1fr 0.5fr;
-	grid-column-gap: 1rem;
+	grid-column-gap: 0.5rem;
 	height: 100vh;
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -402,8 +449,11 @@ body {
 /* section 3 stacks */
 
 .card-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
+	/* display: grid;
+	grid-template-columns: 1fr 2fr 2fr ;
+	width: 50%; */
 }
 
 .img-container {
@@ -618,7 +668,7 @@ body {
 }
 
 .material-icons {
-	color: #28b485;
+	color: #2c4848;
 }
 
 .download-container {
@@ -631,6 +681,8 @@ body {
 	font-size: 2rem;
 	margin-top: 5px;
 	color: white;
+	text-decoration:none;
+
 }
 
 .footer-deco {

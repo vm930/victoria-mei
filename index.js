@@ -89,7 +89,7 @@ navlinkTag.addEventListener('click', function(e) {
 checkboxTag.addEventListener('click', function(e) {
 	// console.log(burgerline1);
 	if (e.target.checked) {
-         navlinkTag.style.width = "20%";
+         navlinkTag.style.width = "15%";
          burgerline1.style.backgroundColor = "transparent";
          burgerline2.style.backgroundColor = "transparent";
          burgerline3.style.backgroundColor = "transparent";

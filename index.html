@@ -8,51 +8,63 @@
         <link rel="stylesheet" href="./style.css">
         <!-- adding svg icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       
         <script src="./index.js" defer></script>
-        
+        <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js" defer></script>
         <title>Victoria Mei | Full Stack Developer</title>
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/114/brain_1f9e0.png" type="image/icon type">
+
     </head>
     <body>
         <div class="nav">
             <input type="checkbox" class="nav-checkbox" id="navi-toggle">
             <label for="navi-toggle" class="burger">
-                <div class="burger1"></div>
-                <div class="burger2"></div>
-                <div class="burger3"></div>
+                <div class="burgerline line1"></div>
+                <div class="burgerline line2"></div>
+                <div class="burgerline line3"></div>
+                 <!-- <span class="crossline">X</span> -->
             </label>
                 
-            <ul class="navlinks">
+            <ul class="navlinks" >
+               
                 <li>
-                    <span>Home</span>
+                    <span class="nav-option">Home</span>
                 </li>
                 <li>
-                    <span>About</span>
+                    <span class="nav-option">About</span>
                 </li>
                 <li>
-                    <span>Skills</span>
+                    <span class="nav-option">Skills</span>
                 </li>
                 <li>
-                    <span>Projects</span>
+                    <span class="nav-option">Projects</span>
                 </li>
                 <li>
-                    <span>Blogs</span>
+                    <span class="nav-option">Blogs</span>
                 </li>
                 <li>
-                    <span>Contact</span>
+                    <span class="nav-option">Contact</span>
                 </li>
             </ul>
 
 
             <div class="logo-container">
-                <img src="./img/materialize.png" alt="logo">
+                <a herf="#" class="icon-container">
+                    <img class="icon-img" src="./img/linkedin_icon.png" alt="linkin">
+                </a >
+                 <a herf="#" class="icon-container">
+                    <img class="icon-img" src="./img/github_icon.png" alt="github">
+                </a >
+                 <a herf="#" class="icon-container">
+                    <img class="icon-img" src="./img/twitter_icon.png" alt="twitter">
+                </a>
+              
             </div>
             
         </div>
 
         <div class="deco-header">
         <header class="header">
-            <div class="logo-container"><img src="./img/materialize.png" alt="logo"></div> 
+            <!-- <div class="logo-container"><img src="./img/github_icon.png" alt="logo"></div>  -->
          </header>
         </div>
 
@@ -61,17 +73,13 @@
             <div class="intro-container">
                 <div class="title-container">
                 <h1 class="heading-greeting">Hi, I'm Victoria </h1>
-                <div class="span-roles">
-                    <span>a full stack web developer</span>
-                    <!-- <span>a video creator</span>
-                    <span>a bloger</span> -->
+                <div class="animation-text">
+                    <span  class= "typer" data-words=
+                    "a full stack web developer, a digital content creator, a teacher" data-delay="50" data-colors="#2c4848" style="font-size:2rem;"></span>
                 </div>
                 </div>
-
                 <a href="#" class="btn btn-start btn-animated">Discovery My Work</a>
-                <button>click me</button>
             </div>
-
 
         <main>
 
@@ -82,20 +90,30 @@
                 <div class="heading-secondary-title">
                         <h3 class="heading-secondary">about</h3> 
                         <div class="decorative-line"></div>
+                        <p class="statment">"I strive to create awesome websites</p>
+                        <p class="statment">and web applications."</p>
                 </div>
+                 
             </div>
          
             
          <div class="section-bio">
              <div class="section-about">
-                    
+                     <div class="para-container">
                     <div class="composition">
                         <img class="vickyPic" src="./img/vicky_pig.JPG" alt="vicky">
                     </div>
-                    <div class="para-container">
+                   
                     <div class="label-bold">Who's she?</div>
-                    <p class="statment">I strive to create awesome websites and web applications</p>
-                    <p class="statment--2">Take a look at <a href="#">my work</a>, <a href="#">watch videos</a> & <a href="#">blogs</a>, and <a href="#">get in touch</a>! 
+                    <p class="statment--1">I'm front-end & full stack developer graduated from Flatiron School. I'm interested in all kinds of web development, but my major focus is on front end javascript. I also love creating video contents sharing my skills and web development trends.
+                <p class="statment--1">
+                Earlier I was full-time SQL/Data Analyst worked for a little overgrown tech startup that has been involving into a medium-size software company. 
+                </p>
+                <p class="statment--1">
+                In my previous work, I've worked heavily with dev ops and backend C# devs to migrate and rectoring old codebase. Currently I'm looking for opotunities and open for freelancing projects.
+                    </p>
+                    <p class="statment--2">Take a look at <a  href="#">my work</a>, <a  href="#">watch videos</a> & <a  href="#">blogs</a>, and <a 
+                    href="#">get in touch</a>! 
                     </p>   
                     </div>
              </div>
@@ -152,7 +170,7 @@
         <div class="deco-container--2">
 
         <div class="heading-secondary-title">
-            <h3 class="heading-secondary">Stacks</h3>
+            <h3 class="heading-secondary">Skills</h3>
             <div class="decorative-line"></div>
         </div>
 
@@ -231,12 +249,12 @@
 
 <!-- section 4 projects starts here-->
         <div class="section-four">
-                <div class="deco-heading">
+    
                 <div class="heading-secondary-title">
                     <h3 class="heading-secondary">Selected Projects</h3>
                     <div class="decorative-line"></div>
                 </div>
-        </div>
+    
 
         <div class="project-container">
                 <div class="project-component">
@@ -363,15 +381,19 @@
 
 <!-- section 6 contact me section -->
         <div class="section-six">
+                <div class="heading-secondary-title">
+                    <h3 class="heading-secondary">Contact Me</h3>
+                    <div class="decorative-line"></div>
+                </div>
 
                 <div class="deco-message">
                         
                         <div class="contact">
-                            <span>Let's Design Something.</span>
-                            <span>Let's Create Something.</span>
-                            <span>Let's Build Something.</span>
-                            <a class= "btn-start" herf="#"><span>contact me</span></a>
-                            <div class="download-container">
+                        <h1> Let's
+                            <span class="typer" data-words="design something..., create something..., build something..."  data-delay="60" data-colors="#829779">
+                        </h1>
+                            <a  herf="#"><span>contact me</span></a>
+                            <div class="btn-start" class="download-container">
                                 <a id="download" href="./img/dummie test.docx" download>
                                     <i class="large material-icons">file_download</i>
                                     <span>download my Resume</span>

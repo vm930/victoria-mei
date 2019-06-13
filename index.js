@@ -1,18 +1,16 @@
 const checkboxTag = document.querySelector('.nav-checkbox');
 const navlinkTag = document.querySelector('.navlinks');
+const textContent = ["a full stack web developer","a digital content creator","a teacher"]
+const animationTextTag = document.querySelector(".animation-text");
+const navBurgerTag = document.querySelector(".burgerline")
+const discoverBtn = document.querySelector(".btn-start")
+const burgerline1 = document.querySelector(".line1")
+const burgerline2 = document.querySelector(".line2")
+const burgerline3 = document.querySelector(".line3")
+const burgerline = document.querySelector(".burgerline")
+const cross = document.querySelector(".crossline")
 
-checkboxTag.addEventListener('click', function(e) {
-	// console.log(e.target.checked);
-	if (e.target.checked) {
-		navlinkTag.style.backgroundColor = ' rgb(153, 183, 187, 0.7)';
-	} else {
-		navlinkTag.style.backgroundColor = 'transparent';
-	}
-});
 
-document.addEventListener('scroll', function() {
-	animateGraph();
-});
 
 function animateGraph() {
 	document.querySelector('.line1 .filler').classList.add('animateGraph1');
@@ -29,23 +27,6 @@ function animateGraph() {
 
 	document.querySelector('.line7 .filler').classList.add('animateGraph7');
 }
-
-// // Scroll to specific values
-// // scrollTo is the same
-// window.scroll({
-//     top: 2500,
-//     left: 0,
-//     behavior: 'smooth'
-// });
-
-// // Scroll certain amounts from current position
-// window.scrollBy({
-//     top: 100, // could be negative value
-//     left: 0,
-//     behavior: 'smooth'
-// });
-
-// Scroll to a certain element
 
 
 function scolltoHome() {
@@ -104,7 +85,49 @@ navlinkTag.addEventListener('click', function(e) {
 });
 
 
+// nav bar animations
+checkboxTag.addEventListener('click', function(e) {
+	// console.log(burgerline1);
+	if (e.target.checked) {
+         navlinkTag.style.width = "15%";
+         burgerline1.style.backgroundColor = "transparent";
+         burgerline2.style.backgroundColor = "transparent";
+         burgerline3.style.backgroundColor = "transparent";
+         
+        //  cross.style.color = "#2c4848"
+        
+	} else {
+        navlinkTag.style.width = "0%";
+        // cross.style.color = "transparent"
+         burgerline.style.backgroundColor = "#2c4848;";
+          burgerline1.style.backgroundColor = "#2c4848";
+         burgerline2.style.backgroundColor = "#2c4848";
+         burgerline3.style.backgroundColor = "#2c4848";
+	}
+});
 
-// document.querySelector('button').addEventListener('click', function() {
-// 	scollfun();
-// });
+//quick link navbar 
+
+discoverBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    scolltoProjects();
+})
+
+document.querySelector(".statment--2").addEventListener("click",function(e){
+    e.preventDefault()
+    if (e.target.innerText === "my work"){
+        scolltoProjects();
+    }
+    if (e.target.innerText === "blogs"){
+        scolltoBlogs();
+    }
+    if (e.target.innerText === "get in touch"){
+        scolltoContact();
+    }
+})
+
+//progress bar animations
+
+document.addEventListener('scroll', function() {
+	animateGraph();
+});

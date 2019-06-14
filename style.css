@@ -277,10 +277,10 @@ body {
 	margin: 2rem 2rem 1rem 2rem;
 	font-size: 3.5rem;
 	font-weight: 900;
-	-webkit-background-clip: text;
 	color: transparent;
 	letter-spacing: 0.4rem;
 	background-image: linear-gradient(to right, #28b485, #7ed56f);
+	-webkit-background-clip: text;
 	text-transform: uppercase;
 }
 
@@ -636,26 +636,102 @@ body {
 	color: #24292e;
 }
 
+/* Actual project */
+
 .project-container {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	justify-content: center;
-	height: 100vh;
-	width: 100%;
 }
 
 .project-component {
-	width: 100%;
-	height: 20rem;
-	background-color: whitesmoke;
+	background-color: rgb(242, 242, 242);
 	box-shadow: 0.4rem 0.4rem 0.4rem rgba(46, 41, 78, .15);
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	border-radius: 7px;
 	transition: all .3s;
-	margin: 2rem 1rem 6rem;
+	margin: 2.5rem 1rem 6rem;
+}
+
+.project-img-container {
+	width: 80%;
+	border-radius: 3px;
+	margin-top: 10rem;
+}
+
+.project-img-container img {
+	width: 100%;
+}
+
+.project-component header {
+	font-size: 2.5rem;
+	margin: 1rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	color: #829779;
+}
+
+.project-description ul {
+	list-style: none;
+	display: inline-block;
+	margin: 2rem;
+	text-align: center;
+}
+
+.project-description li {
+	list-style: none;
+	font-size: 1.6rem;
+	margin: 1rem;
+	opacity: 0.6;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+}
+
+.project-tech button {
+	background: #829779;
+	opacity: 0.8;
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 3px;
+	margin: 1rem;
+	font-size: 1.6rem;
+}
+
+.project-source {
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.project-source a {
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	background: white;
+	color: #829779;
+	font-size: 1.4rem;
+	border: 2px solid #829779;
+	transition: all .3s;
+}
+
+.project-source a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	background: #829779;
+	color: white;
+	font-size: 1.4rem;
+	border: 2px solid white;
+	transition: all .3s;
 }
 
 .deco-clip-path {
@@ -726,7 +802,7 @@ body {
 
 .blog-component {
 	height: 20rem;
-	width: 30%;
+	width: 50%;
 	margin: 2rem;
 	background: yellowgreen;
 }

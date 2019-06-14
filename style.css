@@ -633,7 +633,7 @@ body {
 	width: 50%;
 	font-size: 2rem;
 	letter-spacing: 2px;
-	color: #24292e;
+	color: #3fbf83;
 }
 
 /* Actual project */
@@ -806,11 +806,12 @@ body {
 	margin: 2rem;
 	background: yellowgreen;
 }
+*/
 
 .deco-blank {
 	background: #f7f7f7;
 	height: 40vh;
-} */
+}
 
 /* Footer section*/
 
@@ -830,7 +831,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* margin: 10rem; */
 }
 
 .contact h1 {
@@ -840,6 +840,7 @@ body {
 	letter-spacing: 2px;
 	color: #829779;
 	margin: 5rem;
+	opacity: 0.9;
 }
 
 .contact span {
@@ -854,7 +855,20 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	letter-spacing: 2px;
-	color: #28b485;
+	color: #829779;
+}
+
+.contact h2 {
+	font-size: 1.6rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #829779;
+	margin: 5%;
+}
+
+.contact a:hover {
+	color: white;
 }
 
 .material-icons {
@@ -868,7 +882,7 @@ body {
 	padding: 1rem 2rem;
 	background: white;
 	color: #829779;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	border: 5px solid #829779;
 	transition: all .3s;
 }

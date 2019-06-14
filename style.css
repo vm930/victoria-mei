@@ -457,14 +457,7 @@ body {
 
 /* section 3 stacks */
 .section-three {
-	height: 100vh;
-}
-
-.skills-container {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-column-gap: 0.5rem;
-	height: 100vh;
+	height: 100%;
 }
 
 .card-description {
@@ -512,7 +505,38 @@ body {
 	color: #24292e;
 }
 
+.skills-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(242, 242, 242);
+	height: 30vh;
+	margin: 3%;
+}
+
+.skill-para {
+	width: 80%;
+	margin: 1rem;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	color: #829779;
+}
+.skill-para strong {
+	width: 50%;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	color: #24292e;
+}
+
 /* this is for the cards of stacks on the right */
+
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 0.5rem;
+	height: 100vh;
+}
 
 .card-container {
 	display: flex;
@@ -582,7 +606,34 @@ body {
 /* section 4 */
 
 .section-four {
-	height: 100vh;
+	/* background: linear-gradient(to right bottom, #99b7bb, #7ed56f); */
+	height: 100%;
+	width: 100%;
+}
+
+.section-four h3 {
+	text-transform: none;
+}
+
+.project-des {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1rem;
+	color: #99b7bb;
+	width: 60%;
+}
+
+.project-des p {
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+
+.project-des strong {
+	width: 50%;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	color: #24292e;
 }
 
 .project-container {
@@ -605,11 +656,6 @@ body {
 	border-radius: 7px;
 	transition: all .3s;
 	margin: 2rem 1rem 6rem;
-}
-
-.section-four h3 {
-	text-transform: none;
-	height: 50%;
 }
 
 .deco-clip-path {
@@ -651,12 +697,6 @@ body {
 	height: 3px;
 }
 
-.section-four {
-	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
-	height: 100%;
-	width: 100%;
-}
-
 .deco-heading {
 	display: flex;
 	background-color: rgb(242, 242, 242);
@@ -667,9 +707,11 @@ body {
 }
 
 .deco-div {
+	float: right;
 	display: flex;
 	background: linear-gradient(to right top, #99b7bb, #7ed56f);
 	height: 100vh;
+	width: 80%;
 	-webkit-clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 }

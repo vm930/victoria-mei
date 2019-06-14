@@ -9,7 +9,6 @@ linear-gradient(to right bottom, #28b485, #7ed56f);
 */
 
 .roots {
-	--main-bg-color: coral;
 	--body-background: #f7f7f7;
 	--body-dark: #24292e;
 	--light-grey: #99b7bb;
@@ -355,6 +354,13 @@ body {
 	opacity: 0.8;
 }
 
+.statment--1 strong {
+	padding-top: 2rem;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	color: #3fbf83;
+}
+
 .statment--1 {
 	padding-top: 2rem;
 	font-size: 1.6rem;
@@ -462,9 +468,48 @@ body {
 }
 
 .card-description {
-	color: red;
-	height: 100vh;
-	border: solid 1px orange;
+	display: flex;
+	justify-content: center;
+	margin-left: 50%;
+	margin-bottom: 10%;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	width: 80%;
+	margin-left: 11%;
+	margin-bottom: 5%;
+}
+
+.para {
+	margin: 2rem;
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #99b7bb;
+}
+
+.para strong {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #3fbf83;
+}
+
+.para--1 {
+	padding-top: 5rem;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	color: #2c4848;
+}
+.para--1 strong {
+	padding-top: 5rem;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	color: #24292e;
 }
 
 /* this is for the cards of stacks on the right */
@@ -487,7 +532,7 @@ body {
 	height: 20%;
 	box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, .12);
 	box-sizing: border-box;
-	margin: 1rem;
+	margin: 2rem;
 	background: #f7f7f7;
 }
 
@@ -577,7 +622,6 @@ body {
 
 .deco-container--2 {
 	background: #f4f4f4;
-	-webkit-clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
 	clip-path: polygon(0 0, 94% 0, 100% 100%, 7% 100%);
 }
 

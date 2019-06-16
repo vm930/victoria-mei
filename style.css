@@ -396,15 +396,17 @@ body {
 
 .section-bio {
 	display: grid;
-	grid-template-rows: minmax(min-conent, max-content);
+	/* grid-template-rows: minmax(min-conent, max-content); */
 	grid-template-columns: 1fr 0.5fr;
 	grid-column-gap: 0.5rem;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 	width: 70%;
 	margin: 0 auto;
 }
+
+/* i need to put a media queries here to switch grid from vertical to horizontal and then change the width of section bio to be 100% */
 
 .wrapper {
 	display: flex;
@@ -495,6 +497,7 @@ body {
 
 .para {
 	display: flex;
+	flex-direction: column;
 	margin: 2rem;
 	font-size: 2rem;
 	font-weight: 500;

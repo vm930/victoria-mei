@@ -66,7 +66,26 @@ body {
 	justify-content: center;
 	z-index: 1500;
 	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
-	transition: transform 2s;
+	transition: width 1s;
+}
+
+.nav-checkbox:checked + .burger + .navlinks {
+	width: 25%;
+}
+
+.nav-checkbox:checked + .burger .burgerline {
+	background: transparent;
+}
+
+.nav-checkbox:checked + .burger + .navlinks .crossline {
+	color: #2c4848;
+	margin: 2rem;
+}
+.crossline {
+	cursor: pointer;
+	position: absolute !important;
+	top: 10px;
+	right: 10px;
 }
 
 .nav-option {

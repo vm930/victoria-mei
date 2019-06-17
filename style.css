@@ -555,7 +555,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-column-gap: 0.5rem;
-	height: 100vh;
+	height: 100%;
 }
 
 .card-container {

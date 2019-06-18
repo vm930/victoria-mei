@@ -188,6 +188,7 @@ body {
 .title-container {
 	display: flex;
 	flex-direction: column;
+	height: 122px;
 }
 
 .heading-greeting {

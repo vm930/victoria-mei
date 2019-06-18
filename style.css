@@ -67,6 +67,7 @@ body {
 	z-index: 1500;
 	background: linear-gradient(to right bottom, #99b7bb, #7ed56f);
 	transition: width 1s;
+	overflow: hidden;
 }
 
 .nav-checkbox:checked + .burger + .navlinks {
@@ -343,6 +344,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
+	margin-bottom: 15%;
 	justify-content: center;
 }
 

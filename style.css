@@ -144,6 +144,9 @@ body {
 .logo-container {
 	display: flex;
 	justify-content: flex-end;
+	top: 5%;
+	right: 5%;
+	position: absolute;
 }
 
 .icon-container {
@@ -162,16 +165,6 @@ body {
 	cursor: pointer;
 }
 
-/* 
-.icon-container img {
-	width: 100%;
-	opacity: 0.8;
-	cursor:pointer;
-} */
-
-/* .logo-container img {
-	width: 100%;
-} */
 .intro-container {
 	position: absolute;
 	top: 0;
@@ -182,7 +175,6 @@ body {
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	z-index: 3;
 }
 
 .title-container {

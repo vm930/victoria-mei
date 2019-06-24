@@ -63,21 +63,26 @@ navlinkTag.addEventListener('click', function(e) {
 	// console.log(e.target.innerText);
 	if (e.target.innerText === 'Home') {
 		scolltoHome();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'About') {
 		scolltoAbout();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Skills') {
 		scolltoSkills();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Projects') {
 		scolltoProjects();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Blogs') {
 		scolltoBlogs();
 	}
 	if (e.target.innerText === 'Contact') {
 		scolltoContact();
+		checkboxTag.checked = false;
 	}
 });
 

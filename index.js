@@ -63,45 +63,28 @@ navlinkTag.addEventListener('click', function(e) {
 	// console.log(e.target.innerText);
 	if (e.target.innerText === 'Home') {
 		scolltoHome();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'About') {
 		scolltoAbout();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Skills') {
 		scolltoSkills();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Projects') {
 		scolltoProjects();
+		checkboxTag.checked = false;
 	}
 	if (e.target.innerText === 'Blogs') {
 		scolltoBlogs();
 	}
 	if (e.target.innerText === 'Contact') {
 		scolltoContact();
+		checkboxTag.checked = false;
 	}
 });
-
-// nav bar animations
-// checkboxTag.addEventListener('click', function(e) {
-// 	// console.log(burgerline1);
-// 	if (e.target.checked) {
-// 		navlinkTag.style.width = '15%';
-// 		burgerline1.style.backgroundColor = 'transparent';
-// 		burgerline2.style.backgroundColor = 'transparent';
-// 		burgerline3.style.backgroundColor = 'transparent';
-
-// 		//  cross.style.color = "#2c4848"
-// 	} else {
-// 		navlinkTag.style.width = '0%';
-// 		// cross.style.color = "transparent"
-// 		burgerline.style.backgroundColor = '#2c4848;';
-// 		burgerline1.style.backgroundColor = '#2c4848';
-// 		burgerline2.style.backgroundColor = '#2c4848';
-// 		burgerline3.style.backgroundColor = '#2c4848';
-// 	}
-// });
-
-//quick link navbar
 
 cross.addEventListener('click', function(e) {
 	checkboxTag.checked = false;

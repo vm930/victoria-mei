@@ -106,6 +106,12 @@ body {
 	margin: 2rem;
 }
 
+.nav-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .burger {
 	cursor: pointer;
 	position: fixed;
@@ -185,8 +191,7 @@ body {
 .heading-greeting {
 	display: block;
 	color: #2c4848;
-	font-size: 4rem;
-	font-weight: 700;
+	font-size: 3rem;
 	letter-spacing: 0.4rem;
 	animation-name: moveInRight;
 	animation-duration: 1s;
@@ -280,7 +285,7 @@ body {
 	display: inline-block;
 	position: relative;
 	margin: 2rem 2rem 1rem 2rem;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: 900;
 	color: transparent;
 	letter-spacing: 0.4rem;
@@ -419,7 +424,7 @@ body {
 	text-align: left;
 	color: #24292e;
 	margin: 0.8rem;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 2px;
 }
@@ -494,14 +499,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	letter-spacing: 2px;
 	color: #99b7bb;
 }
 
 .para strong {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	letter-spacing: 2px;
 	color: #3fbf83;
@@ -515,7 +520,7 @@ body {
 }
 .para--1 strong {
 	padding-top: 5rem;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	letter-spacing: 2px;
 	color: #24292e;
 }
@@ -539,7 +544,7 @@ body {
 }
 .skill-para strong {
 	max-width: 50%;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	letter-spacing: 2px;
 	color: #24292e;
 }
@@ -613,7 +618,7 @@ body {
 
 .img-container label {
 	display: block;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	letter-spacing: 2px;
 	margin: 1.6rem;
@@ -642,13 +647,13 @@ body {
 }
 
 .project-des p {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	letter-spacing: 2px;
 }
 
 .project-des strong {
 	max-width: 50%;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	letter-spacing: 2px;
 	color: #3fbf83;
 }
@@ -684,7 +689,7 @@ body {
 }
 
 .project-component header {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	margin: 1rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
@@ -734,7 +739,7 @@ body {
 	padding: 1rem 2rem;
 	background: white;
 	color: #829779;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	border: 2px solid #829779;
 	transition: all .3s;
 	margin: 3rem;
@@ -747,7 +752,7 @@ body {
 	padding: 1rem 2rem;
 	background: #829779;
 	color: white;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	border: 2px solid white;
 	transition: all .3s;
 }
@@ -777,7 +782,7 @@ body {
 	display: inline-block;
 	position: relative;
 	margin: 2rem 2rem 1rem 2rem;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: 900;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -860,7 +865,7 @@ body {
 }
 
 .contact h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -870,7 +875,7 @@ body {
 }
 
 .contact span {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -924,8 +929,8 @@ body {
 	padding: 1rem 2rem;
 	background: #829779;
 	color: white;
-	font-size: 1.4rem;
-	border: 5px solid white;
+	font-size: 1.6rem;
+	border: 2px solid white;
 	transition: all .3s;
 }
 

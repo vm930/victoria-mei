@@ -150,18 +150,18 @@ body {
 .logo-container {
 	display: flex;
 	justify-content: flex-end;
-	top: 5%;
+	top: 3%;
 	right: 5%;
 	position: absolute;
 }
 
 .icon-container {
 	margin: 0.8rem;
-	width: 4%;
+	width: 3.7%;
 }
 
 .icon-img:hover {
-	opacity: 0.7;
+	opacity: 0.8;
 	transform: translateY(-0.3rem);
 }
 
@@ -479,9 +479,8 @@ body {
 
 .card-description {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	margin-left: 30%;
-	margin-bottom: 10%;
 	align-items: center;
 }
 
@@ -499,16 +498,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
-	font-size: 1.6rem;
-	font-weight: 500;
-	letter-spacing: 2px;
+	font-size: 3rem;
 	color: #99b7bb;
+	letter-spacing: 2px;
+	opacity: 0.8;
 }
 
 .para strong {
-	font-size: 1.6rem;
+	font-size: 3rem;
 	font-weight: 500;
-	letter-spacing: 2px;
 	color: #3fbf83;
 }
 
@@ -522,7 +520,7 @@ body {
 	padding-top: 5rem;
 	font-size: 1.6rem;
 	letter-spacing: 2px;
-	color: #24292e;
+	color: #3fbf83;
 }
 
 .skills-text-container {
@@ -549,7 +547,7 @@ body {
 	color: #24292e;
 }
 
-/* this is for the cards of stacks on the right */
+/* this is for the cards of stacks on the left */
 
 .skills-container {
 	display: grid;
@@ -565,8 +563,6 @@ body {
 	max-width: 100%;
 	height: 100%;
 	align-items: center;
-	background: linear-gradient(to left top, #99b7bb, #f7f7f7);
-	/* margin: 0 auto; */
 }
 
 .card {
@@ -611,7 +607,7 @@ body {
 }
 
 .img-container img {
-	max-width: 8%;
+	max-width: 15%;
 	margin: 1px;
 	opacity: 0.8;
 }
@@ -622,7 +618,7 @@ body {
 	font-weight: 500;
 	letter-spacing: 2px;
 	margin: 1.6rem;
-	color: var(--body-dark);
+	color: #99b7bb;
 }
 
 /* section 4 */
@@ -664,6 +660,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .project-component {
@@ -676,6 +673,7 @@ body {
 	border-radius: 7px;
 	transition: all .3s;
 	margin: 2.5rem 1rem 6rem;
+	width: 55%;
 }
 
 .project-img-container {
@@ -817,7 +815,7 @@ body {
 	float: right;
 	display: flex;
 	background: linear-gradient(to right top, #99b7bb, #7ed56f);
-	height: 40vh;
+	height: 100vh;
 	width: 30%;
 	-webkit-clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
 	clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0% 75%, 0 0);
@@ -848,13 +846,17 @@ body {
 
 .section-six {
 	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .deco-message {
 	height: 90vh;
-	background-color: rgb(242, 242, 242);
+	/* background-color: rgb(242, 242, 242); */
+	background: linear-gradient(to right top, #99b7bb, #7ed56f);
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
 	clip-path: polygon(0% 0%, 100% 0%, 100% 62%, 67% 63%, 20% 100%, 33% 63%, 0 62%);
+	margin: 5rem;
 }
 
 .contact {
@@ -869,9 +871,8 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	letter-spacing: 2px;
-	color: #829779;
+	color: whitesmoke;
 	margin: 5rem;
-	opacity: 0.9;
 }
 
 .contact span {
@@ -892,19 +893,15 @@ body {
 .contact h2 {
 	font-size: 1.6rem;
 	font-family: "Lato", sans-serif;
-	font-weight: 500;
 	letter-spacing: 2px;
-	color: #829779;
+	color: whitesmoke;
 	margin: 5%;
+	text-align: center;
 }
 
-.contact a:hover {
+/* .download-container a :hover {
 	color: white;
-}
-
-.material-icons {
-	color: #2c4848;
-}
+} */
 
 .download-container {
 	cursor: pointer;
@@ -922,7 +919,7 @@ body {
 	text-decoration: none;
 }
 
-.download-container:hover {
+.download-container :hover {
 	cursor: pointer;
 	text-decoration: none;
 	border-radius: 5px;

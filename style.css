@@ -989,7 +989,16 @@ body {
 	.skills-container {
 		grid-template-columns: 1fr;
 	}
-	.hide--desktop {
+	.hide--mobile {
 		display: none;
+	}
+	.card-container {
+		margin: 3rem;
+	}
+	.card {
+		width: 100%;
+	}
+	.project-component {
+		width: 100%;
 	}
 }

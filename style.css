@@ -405,12 +405,6 @@ body {
 	margin: 0 auto;
 }
 
-@media only screen and (max-width: 1334px) {
-	.section-bio {
-		grid-template-columns: 1fr;
-	}
-}
-
 /* i need to put a media queries here to switch grid from vertical to horizontal and then change the width of section bio to be 100% */
 
 .wrapper {
@@ -982,5 +976,20 @@ body {
 	}
 	100% {
 		transform: scale(.75);
+	}
+}
+
+@media only screen and (max-width: 1334px) {
+	.section-bio {
+		grid-template-columns: 1fr;
+	}
+	.para-container {
+		width: 100%;
+	}
+	.skills-container {
+		grid-template-columns: 1fr;
+	}
+	.hide--desktop {
+		display: none;
 	}
 }

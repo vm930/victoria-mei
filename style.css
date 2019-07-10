@@ -951,8 +951,8 @@ body {
 }
 .brain {
 	opacity: 0.8;
-	height: 3%;
-	width: 3%;
+	height: 2.5%;
+	width: 2.5%;
 	transform: rotate(-45deg);
 	animation: brainbeat 1s infinite;
 	margin: 0 1.5rem;

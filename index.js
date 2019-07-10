@@ -59,6 +59,14 @@ function scolltoContact() {
 	});
 }
 
+function scolltoResume() {
+	var win = window.open(
+		'https://docs.google.com/document/d/1Rk4FfPDaxLGypf-TGnu6F0bJ_4TlfSXFrYNzgy1OPQ0/edit?usp=sharing',
+		'_blank'
+	);
+	win.focus();
+}
+
 navlinkTag.addEventListener('click', function(e) {
 	// console.log(e.target.innerText);
 	if (e.target.innerText === 'Home') {
@@ -82,6 +90,10 @@ navlinkTag.addEventListener('click', function(e) {
 	}
 	if (e.target.innerText === 'Contact') {
 		scolltoContact();
+		checkboxTag.checked = false;
+	}
+	if (e.target.innerText === 'Resume') {
+		scolltoResume();
 		checkboxTag.checked = false;
 	}
 });

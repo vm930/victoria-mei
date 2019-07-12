@@ -990,8 +990,6 @@ body {
 	letter-spacing: 2px;
 	font-size: 1rem;
 	text-align: center;
-	padding-left: 4rem;
-	padding-right: 4rem;
 }
 .brain {
 	opacity: 0.8;
@@ -999,6 +997,10 @@ body {
 	transform: rotate(-45deg);
 	animation: brainbeat 1s infinite;
 	margin: 0 1.5rem;
+}
+
+.brain img {
+	width: 100%;
 }
 
 @keyframes brainbeat {
@@ -1043,5 +1045,11 @@ body {
 	}
 	.project-component {
 		width: 100%;
+	}
+	.brain {
+		width: 6%;
+	}
+	.footer-span {
+		font-size: 1rem;
 	}
 }

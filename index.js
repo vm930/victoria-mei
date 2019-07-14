@@ -1,6 +1,5 @@
 const checkboxTag = document.querySelector('.nav-checkbox');
 const navlinkTag = document.querySelector('.navlinks');
-const textContent = [ 'a full stack web developer', 'a digital content creator', 'a teacher' ];
 const animationTextTag = document.querySelector('.animation-text');
 const navBurgerTag = document.querySelector('.burgerline');
 const discoverBtn = document.querySelector('.btn-start');
@@ -20,10 +19,6 @@ function animateGraph() {
 	document.querySelector('.line4 .filler').classList.add('animateGraph4');
 
 	document.querySelector('.line5 .filler').classList.add('animateGraph5');
-
-	document.querySelector('.line6 .filler').classList.add('animateGraph6');
-
-	document.querySelector('.line7 .filler').classList.add('animateGraph7');
 }
 
 function scolltoHome() {

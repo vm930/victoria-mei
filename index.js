@@ -56,8 +56,7 @@ function scolltoContact() {
 
 function scolltoResume() {
 	var win = window.open(
-		'https://docs.google.com/document/d/1Rk4FfPDaxLGypf-TGnu6F0bJ_4TlfSXFrYNzgy1OPQ0/edit?usp=sharing',
-		'_blank'
+		'https://docs.google.com/document/d/1FCb7k4C8_UX9oSFVbfq39Ra2Mi8meMh13JDawtKKkyM/edit?usp=sharing'
 	);
 	win.focus();
 }

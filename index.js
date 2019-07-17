@@ -22,7 +22,7 @@ function animateGraph() {
 }
 
 function scolltoHome() {
-	document.querySelector('.intro-container').scrollIntoView({
+	document.querySelector('.intro-social-container').scrollIntoView({
 		behavior: 'smooth'
 	});
 }

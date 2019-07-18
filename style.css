@@ -519,7 +519,7 @@ body {
 	letter-spacing: 2px;
 	color: #3fbf83;
 }
-
+/* 
 .skills-text-container {
 	display: flex;
 	flex-direction: column;
@@ -528,7 +528,7 @@ body {
 	background-color: rgb(242, 242, 242);
 	height: 30vh;
 	margin: 3%;
-}
+} */
 
 .skill-para {
 	max-width: 80%;
@@ -636,21 +636,24 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 1rem;
+	margin: 2rem;
 	color: #99b7bb;
-	max-width: 60%;
+	width: 60%;
 }
 
 .project-des p {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	letter-spacing: 2px;
+	color: #99b7bb;
+	opacity: 0.8;
 }
 
 .project-des strong {
 	max-width: 50%;
-	font-size: 1.6rem;
+	font-size: 2rem;
 	letter-spacing: 2px;
 	color: #3fbf83;
+	cursor: pointer;
 }
 
 /* Actual project */

@@ -103,14 +103,11 @@ discoverBtn.addEventListener('click', function(e) {
 
 document.querySelector('.statment--2').addEventListener('click', function(e) {
 	e.preventDefault();
-	if (e.target.innerText === 'my work') {
+	if (e.target.innerText === 'my projects') {
 		scolltoProjects();
 	}
 	if (e.target.innerText === 'blogs') {
 		scolltoBlogs();
-	}
-	if (e.target.innerText === 'get in touch') {
-		scolltoContact();
 	}
 });
 
